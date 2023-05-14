@@ -90,7 +90,9 @@ ul li ul.dropdown{
 }
 /* --------------------------Nav Bar Dropdovn after line hover */
 
-
+ul li:hover ul.dropdown a::after{
+    display: none;
+}
 
 .dropdown a:hover{
    background-color: #55595c;
