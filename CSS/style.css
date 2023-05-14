@@ -1,0 +1,23 @@
+
+
+* {
+    box-sizing: border-box;
+    
+
+}
+
+html { 
+    min-height: 100vh;
+     font-family: 'Roboto Slab', serif; 
+    scroll-behavior: smooth;
+
+}
+
+/* --------------------------Main */
+ main{
+   
+   min-height: 100vh;
+   margin-top: 1em;
+  
+   
+} 
