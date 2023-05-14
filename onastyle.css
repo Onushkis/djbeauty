@@ -97,7 +97,53 @@ ul li:hover ul.dropdown a{
     
 }
 
-@media (max-width: 675px) {
+    /* -------------------------Main Flex  */
+    .flex-main{
+        width: 1500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 5em;
+    }
+    .flex-main-left{
+        margin-left: 3em;
+        font-weight: 300;
+        
+    }
+    .flex-main h1{
+        color: #292926;
+    font-family: "Epilogue", Sans-serif;
+    font-size: 57px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: -3px;
+    margin-bottom: 1.2em;
+    }
+     .flex-main h4{
+        color: #7A7A7A;
+        margin-bottom: 1.6em;
+     }
+    .flex-main p, ul{
+        margin-bottom: 1.6em;
+        line-height: 1.6
+      
+    }
+
+
+
+@media (max-width: 991px) {
+    .flex-main{
+       flex-direction: column ;
+       width: 850px;
+       
+    }
+    .flex-main h1{
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
 
     nav .nav-list {
         display: grid;
@@ -161,3 +207,4 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
 input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     transform: rotate(-45deg);
 }
+
