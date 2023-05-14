@@ -14,7 +14,7 @@ nav {
     padding: 0 15%;
     height: 140px;
     line-height: 75px;
-    background: #404040;
+    background: #000;
     align-items: center;
     align-content: center;
 }
@@ -39,9 +39,9 @@ nav .nav-list .nav-item {
     transition: .4s;
 }
 
-nav .nav-list .nav-item:hover {
+/* nav .nav-list .nav-item:hover {
     background: #b69955;
-}
+} */
 
 nav .nav-list .nav-link {
     color: #f1f1f1;
@@ -54,12 +54,19 @@ nav .nav-list .nav-link {
 /* --------------------------------Drop Down */
 
 ul li ul.dropdown li{
-    display: block;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    /* background: peru; */
+    /* padding: 0 20px 0 20px; */
     }
     ul li ul.dropdown{
         /* width: 100%; */
         width: max-content;
-        background:#22438c; 
+        /* background:#22438c;  */
         position: absolute;
         z-index: 999;
         display: none;
@@ -79,13 +86,16 @@ ul li:hover ul.dropdown a::after{
 
 .dropdown a:hover{
    background-color: #55595c;
+   display: block;
+   width: 100%;
+   text-align: center;
 }
 ul li:hover ul.dropdown{
     display: block;
+    background: black;
 }
 ul li:hover ul.dropdown a{
-    color: white;
-    
+    color: white;    
 }
 
     /* -------------------------Main Flex  */
@@ -144,7 +154,7 @@ ul li:hover ul.dropdown a{
       
     }
 /* ----------------------------------Info flex*/
-.info-flex h2{
+/* .info-flex h2{
     color: #C59D64;
     font-family: "Mr De Haviland", Sans-serif;
     font-size: 50px;
@@ -246,12 +256,13 @@ width: 100%;
     width: 100%;
     background: #3498db;
 
- }
+ } 
  
 @media (max-width: 991px) {
     .flex-main{
        flex-direction: column ;
        width: 850px;
+       margin-top: 15em;
        
     }
     .displayblock{
@@ -271,13 +282,14 @@ width: 100%;
     nav .nav-list {
         display: grid;
         position: absolute;
-        background: #404040;
+        background: #000;
         width: 100%;
         top: 75px;
         left: 0;
         transform: translateY(-100%);
         z-index: -1;
         transition: .6s;
+        margin-top: 30px;
     }
 
     nav .nav-list .nav-item {
@@ -286,8 +298,11 @@ width: 100%;
 
     nav .navbar-toggler {
         display: grid !important;
-    }
+    }    
 
+    nav .nav-list .nav-item {
+        padding: 8px 30px;
+    }
 }
 
 nav .navbar-toggler {
@@ -305,6 +320,7 @@ nav .navbar-toggler .bar {
     border-radius: 10%;
     transition: .4s;
 }
+
 
 input {
     display: none;
