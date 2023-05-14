@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Variables/variables.css">
+
+
     <link rel="stylesheet" href="CSS/style.css">
     
     <title>dj Beauty care</title>
@@ -13,6 +15,7 @@
     
     
     <header>
+        <nav class=".nav">
         <ul>
             <li><a href="#"> Home</a></li>
             <li><a href="#"> Sevices</a>
@@ -27,7 +30,30 @@
         <li><a href="#"> Contact Us</a></li>
     </ul>
 
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+        </nav>
 
     </header>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger')
+        const navMenu = document.querySelector('.nav')
+    
+        hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active')
+          navMenu.classList.toggle('active')
+        })
+    
+        document.querySelectorAll('.nav-linl').forEach((n) =>
+          n.addEventListener('click', () => {
+            hamburger.classList.remove('active')
+            navMenulh.classList.remove('active')
+          }),
+        )
+      </script>
 </body>
 </html>
