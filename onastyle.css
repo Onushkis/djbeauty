@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     outline: 0;
-    list-style: none;
+    /* list-style: none; */
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -29,6 +29,7 @@ nav .navbar-brand {
 
 nav .nav-list {
     display: flex;
+    list-style: none;
 }
 
 nav .nav-list .nav-item {
@@ -48,17 +49,7 @@ nav .nav-list .nav-link {
     font-weight: 500;
 }
 
-@media (max-width: 935px) {
 
-    nav {
-        padding: 0 2rem;
-    }
-
-    nav .nav-list .nav-item {
-        padding: 0 40px;
-    }
-
-}
 
 /* --------------------------------Drop Down */
 
@@ -125,24 +116,156 @@ ul li:hover ul.dropdown a{
      .flex-main h4{
         color: #7A7A7A;
         margin-bottom: 1.6em;
+       
      }
-    .flex-main p, ul{
+
+     .displayblock{
+        width: 1500px;
+        margin-left: 2em;
+       margin-left: 22em;
+       margin-bottom: 15em;
+     }
+
+
+     .displayblock h4{
+        color: #7A7A7A;
+        margin-bottom: 1.6em;
+        margin-left: 3em;
+        margin-top: 1.6em;
+       margin-bottom: 3em;
+     }
+     .displayblock ul{
+        margin-left: 6em;
+        
+     }
+    .flex-main p, ul, h1{
         margin-bottom: 1.6em;
         line-height: 1.6
       
     }
+/* ----------------------------------Info flex*/
+.info-flex h2{
+    color: #C59D64;
+    font-family: "Mr De Haviland", Sans-serif;
+    font-size: 50px;
+    font-weight: 100
+}
+.contact-flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15em;
+    background: #F2F5F7;
+    height: 600px;
+}
 
+.info-flex h2{
+    width: 1500px;
+    margin-left: 5em;
+    
+}
+.info-flex h1{
+    margin-left: 15em;
+}
+.info-flex p{
+    margin-left: 15em;
+}
 
+/* ----------------------------------Container info email*/
+.container{
+    margin-left: 2em;
+    max-width: 800px;
+    
+    width: 800px;
+    padding: 25px 40px 10px 40px;
 
+}
+.container .text{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.container form{
+    padding: 30px 0 0 0;
+}
+
+.container form .form-row{
+    display: flex;
+    margin: 32px 0;
+
+}
+form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+form .form-row .textarea{
+    height: 70px;
+}
+.input-data input,
+.textarea textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-radius: 2px solid rgba(0,0,0, 0.12);
+}
+ .textarea textarea{
+    resize: none;
+    padding-top: 10px
+ }
+ .input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    
+    transform: all 0.3s easy;
+ }
+
+ .textarea label{
+    width: 100%;
+    bottom:40px;
+    background: #fff;
+ }
+
+ .input-data .underline{
+position: absolute;
+bottom: 0;
+height: 2px;
+width: 100%;
+
+ }
+
+ .input-data .underline:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+
+ }
+ 
 @media (max-width: 991px) {
     .flex-main{
        flex-direction: column ;
        width: 850px;
        
     }
+    .displayblock{
+        width: 850px;
+        margin-left: 0;
+    }
     .flex-main h1{
         margin-bottom: 0.5em;
         margin-top: 0.5em;
+    }
+    .displayblock h1{
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        margin-left: 2em;
     }
 
     nav .nav-list {
