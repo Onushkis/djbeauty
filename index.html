@@ -1,59 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Variables/variables.css">
+  <head>
+    <title>dj beauty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Montserrat Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="CSS/style.css">
-    
-    <title>dj Beauty care</title>
-</head>
-<body>
-    
-    
-    <header>
-        <nav class=".nav">
-        <ul>
-            <li><a href="#"> Home</a></li>
-            <li><a href="#"> Sevices</a>
-            <ul class="dropdown">
-                <li><a href="#"> Eyelash Lifting</a></li>
-                <li><a href="#"> Eyebrow Correction</a></li>
-                    <li><a href="#"> Wax - Removal</a></li>
-                <li><a href="#"> Make -Up</a></li>
-            </ul>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="onastyle.css" />
+  </head>
+
+  <body>
+    <input type="checkbox" id="toggle" />
+
+    <nav>
+      <label class="navbar-toggler" for="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link">Home</a>
         </li>
-        <li><a href="#"> About</a></li>
-        <li><a href="#"> Contact Us</a></li>
-    </ul>
-
-    <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <li class="nav-item">
+          <a class="nav-link">Services</a>
+          <ul class="dropdown">
+            <li><a href="index.html"> Eyelash Lifting</a></li>
+            <li><a href="EyebrowCorrection.html"> Eyebrow Correction</a></li>
+            <li><a href="WaxRemoval.html"> Wax - Removal</a></li>
+            <li><a href="mayup.html"> Make -Up</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Prices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="flex-main">
+        <div>
+          <img src="Assets/eyelash-copenhagen.jpg" alt="picture of women" />
+        </div>
+        <div class="flex-main-left">
+          <h1>Eyelash Lifting</h1>
+          <p>
+            Eyelash lifting is an eyelash highlighting technique that is
+            performed with high-quality tools. It is a semi-permanent procedure
+            that lifts and curls natural eyelashes. After the procedure,
+            eyelashes look longer and thicker.
+          </p>
+          <h4>Eyelash Lifting:</h4>
+          <ul>
+            <li>Enhances the natural beauty of eyelashes</li>
+            <li>Eyelashes look longer and thicker</li>
+            <li>The result lasts for 3-4 weeks</li>
+            <li>
+              In order to make the result more impressive, it is possible to
+              additionally dye the eyelashes
+            </li>
+          </ul>
+        </div>
       </div>
-        </nav>
 
-    </header>
-
-    <script>
-        const hamburger = document.querySelector('.hamburger')
-        const navMenu = document.querySelector('.nav')
-    
-        hamburger.addEventListener('click', () => {
-          hamburger.classList.toggle('active')
-          navMenu.classList.toggle('active')
-        })
-    
-        document.querySelectorAll('.nav-linl').forEach((n) =>
-          n.addEventListener('click', () => {
-            hamburger.classList.remove('active')
-            navMenulh.classList.remove('active')
-          }),
-        )
-      </script>
-</body>
+      <div class="displayblock">
+        <h4>Eyelash Lifting Procedure:</h4>
+        <ul>
+          <li>Any existing make up is removed</li>
+          <li>
+            Eyelashes and eyelids are thoroughly cleaned from any potential
+            dirt, dust or excessive natural skin grease
+          </li>
+          <li>
+            A rolling tool is selected according to the length of the eyelashes
+            and the eyelashes are attached to it;
+          </li>
+          <li>
+            Stage One: LIFTING LIOTON LOTION is applied, it lifts and curls the
+            eyelashes into the desired shape;
+          </li>
+          <li>
+            Stage Two: FIXING LIOTON LOTION is applied, it fixes the lifting of
+            eyelashes to the desired shape established in Stage One.
+          </li>
+          <li>
+            Eyelashes are dyed. The dye works well on any type of hair, and the
+            ingredients strengthen the hair and stimulate it’s growth. Eyelashes
+            dyed with these dyes keep their color for up to 3-4 weeks.
+          </li>
+          <li>
+            SVELVET LASHES EYELASH CONDITIONER is applied, which strengthens,
+            nourishes and promotes the regeneration of eyelashes after the
+            procedure.
+          </li>
+        </ul>
+        <h1>Why is Eyelash Lifting for you?</h1>
+        <ul>
+            <li>These are not glued eyelashes, so the procedure does not require correction.</li>
+            <li>
+                Eyelashes do not require special care – they can be painted with mascara, other usual cosmetics can be used, 
+                the eyelashes can additionally be strengthened using other techniques, ex. using castor oil
+            </li>
+            <li>
+                This is not a chemical wrap! Therefore, you will not harm your eyelashes at all, on the contrary, they will be saturated with a moisturizing serum.
+            </li>
+            
+        </ul>
+      </div>
+      
+    </main>
+  </body>
 </html>
